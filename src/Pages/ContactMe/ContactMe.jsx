@@ -19,7 +19,7 @@ const ContactMe = () => {
                     <textarea name='message' cols="30" rows="10" placeholder='Digite sua mensagem'></textarea>
                 </div>
                 <input className={styles.btnSubmit} type="submit" value="Enviar" />
-                <input type="hidden" name="_next" value="http://localhost:3000/page-tnks"></input>
+                <input type="hidden" name="_next" value="https://novo-portfolio-three.vercel.app/page-tnks"></input>
                 <span className={styles.repositoryAndLinkedin}>
                     <p>Acesse meu Repositório e meu LinkedIn</p>
                     <span className={styles.ambos}>
