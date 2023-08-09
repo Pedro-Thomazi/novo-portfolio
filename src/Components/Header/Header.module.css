@@ -1,0 +1,321 @@
+.header {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../../Images/bg-image-2.webp');
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    animation: chageColor 20s linear infinite;
+}
+
+@keyframes chageColor {
+    0% {
+        box-shadow: 1px 1px 20px goldenrod;
+        border-bottom: 2px solid goldenrod;
+    }
+    50% {
+        box-shadow: 1px 1px 20px rgb(218, 122, 32);
+        border-bottom: 2px solid rgb(218, 122, 32);
+    }
+
+    99% {
+        box-shadow: 1px 1px 20px rgb(218, 60, 32);
+        border-bottom: 2px solid rgb(218, 60, 32);
+    }
+    100%{
+        box-shadow: 1px 1px 20px goldenrod;
+        border-bottom: 2px solid goldenrod;
+    }
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 79px;
+    background: #1f1f1f9d;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.navbar .nameAndIcon {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    color: #da8920
+}
+
+.nameAndIcon .myEngineIcon {
+    position: relative;
+    background: #000;
+    animation: spin 10s linear infinite;
+    border-radius: 50%;
+}
+
+.nameAndIcon .myEngineIcon i {
+    font-size: 2rem;
+    padding: 7px;
+}
+
+.navbar .nameAndIcon span {
+    margin-left: 10px;
+}
+
+.navbar .nameAndIcon h2 {
+    color: #ccc;
+    margin-left: 30px;
+}
+
+.btnHamb {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.btnHamb div {
+    background: #ccc;
+    width: 40px;
+    height: 3px;
+    margin: 5px;
+    transition: .4s;
+}
+
+.navbar .listLinks {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 79px;
+    padding: 10px;
+    background: #1f1f1f9d;
+    width: 50%;
+    transition: .4s;
+    transform: translateX(100%);
+}
+
+.navbar .listLinks li {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    border-radius: 10px 0px 0px 10px;
+    border: 1px solid transparent;
+}
+
+.navbar .listLinks li:hover {
+    background: #3d3d3d;
+    border: 1px solid goldenrod;
+}
+
+.navbar .listLinks li a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 10px 50% 10px 0px;
+}
+
+.navbar .listLinks li i {
+    margin: 0 10px;
+}
+
+.me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+.me h1,
+.me h2 {
+    backdrop-filter: blur(10px);
+    padding: 0 10px;
+    box-shadow: 1px 5px 5px #00000069;
+    margin: 10px 0px;
+}
+
+.me img {
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.inputBtnHamb {
+    display: none;
+}
+
+.inputBtnHamb:checked~.listLinks {
+    transform: translateX(0%);
+}
+
+.inputBtnHamb:checked~.btnHamb .hamb1 {
+    position: absolute;
+    transform: rotate(45deg);
+    background: goldenrod;
+}
+
+.inputBtnHamb:checked~.btnHamb .hamb2 {
+    display: none;
+}
+
+.inputBtnHamb:checked~.btnHamb .hamb3 {
+    background: goldenrod;
+    transform: rotate(-45deg);
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.liPlus {
+    flex-direction: column;
+}
+
+.liPlus .listWithMenu {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 10px 50% 10px 0px;
+}
+
+.liPlus .sub_menu {
+    background: #ccc;
+    display: none;
+    transition: .4s;
+    margin: 10px;
+}
+
+.liPlus .sub_menu li {
+    width: 80%;
+}
+
+.liPlus .sub_menu li a {
+    color: #1f1f1f;
+    margin-left: 10px;
+    border-bottom: 1px solid #1f1f1f;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.liPlus .sub_menu li:hover {
+    background: none;
+    border: 1px solid transparent;
+}
+
+.liPlus .sub_menu.openMenu {
+    display: block;
+}
+
+.liPlus .sub_menu.openMenu+.liPlus .arrow {
+    transform: rotate(180deg);
+}
+
+
+/* ---------- media ---------- */
+@media (min-width: 700px) {
+    .header {
+        height: 65vh;
+    }
+}
+
+@media (min-width: 818px) {
+    .btnHamb {
+        display: none;
+    }
+
+    .navbar .listLinks {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        position: static;
+        padding: 0px;
+        background-color: transparent;
+        width: 60%;
+        transform: translateX(0%);
+        margin-top: 10px;
+    }
+
+    .navbar .listLinks li {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        border-radius: 0px;
+        border: none;
+    }
+
+    .navbar .listLinks li:hover {
+        background: transparent;
+        border: none;
+    }
+
+    .navbar .listLinks li a {
+        padding: 0px;
+    }
+
+    .liPlus .listWithMenu {
+        padding: 0px;
+    }
+
+    .liPlus .listWithMenu:hover > i,
+    .liPlus .listWithMenu:hover > span,
+    .navbar .listLinks li a:hover {
+        color: #da8920;
+    }
+
+    .navbar .listLinks li i {
+        margin: 0 10px;
+    }
+
+
+    .liPlus .sub_menu {
+        position: absolute;
+        top: 40px;
+        padding: 10px 20px;
+        width: auto;
+        border-top: 2px solid goldenrod;
+    }
+
+    .liPlus .sub_menu li {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        border: none;
+        transition: .4s;
+
+    }
+
+    .liPlus .sub_menu li a {
+        color: #1f1f1f;
+        margin: 0px;
+        border-bottom: none;
+        white-space: nowrap;
+        width: auto;
+        padding: 10px;
+    }
+
+    .liPlus .sub_menu li a:hover {
+        color: #1f1f1f;
+    }
+
+    .liPlus .sub_menu li:hover {
+        background: #aaa;
+        border: none;
+        color: #1f1f1f;
+        border-radius: 10px;
+    }
+
+}
+
+@media (min-width: 969px) {
+    .header {
+        background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../../Images/bg-image-3.jpeg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+}

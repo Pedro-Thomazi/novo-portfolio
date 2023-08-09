@@ -1,0 +1,130 @@
+.containerForm {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 1px solid goldenrod;
+    border-radius: 20px;
+    height: 700px;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px 40px;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.containerForm form {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerForm form h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.containerForm form h2 span {
+    color: goldenrod;
+}
+
+.containerForm form div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 20px 0;
+    border-bottom: 2px solid #fff;
+}
+
+.containerForm form div label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.containerForm form div textarea,
+.containerForm form div input {
+    width: 320px;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.containerForm form div textarea {
+    /* background-color: #1f1f1f; */
+    padding: 10px;
+    width: 100%;
+}
+
+.containerForm form div input:focus ~ label,
+.containerForm form div input:valid ~ label {
+    top: -5px;
+}
+
+.containerForm form .btnSubmit {
+    cursor: pointer;
+    padding: 10px;
+    margin: 20px 0px;
+    background: goldenrod;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    color: #fff;
+    border: 1px solid transparent;
+    transition: .4s;
+}
+
+.containerForm form .btnSubmit:hover {
+    border: 1px solid goldenrod;
+    background: transparent;
+    color: goldenrod;
+}
+
+.containerForm form .repositoryAndLinkedin {
+    color: #fff;
+    text-align: center;
+}
+
+.containerForm form .repositoryAndLinkedin .ambos a  {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    font-size: 1.6rem;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    margin: 15px 6px 0;
+    transition: .3s;
+    color: #ccc;
+}
+
+.containerForm form .repositoryAndLinkedin .ambos a:hover {
+    border-color: goldenrod;
+    color: goldenrod;
+    box-shadow: 1px 1px 10px goldenrod;
+}
+
+.btnBack {
+    color: #1f1f1f;
+    background: #ccc;
+    padding: 10px;
+    width: 150px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: .4s;
+}
+
+.btnBack:hover {
+    background-color: #1f1f1f;
+    color: goldenrod;
+    border: 1px solid goldenrod;
+}

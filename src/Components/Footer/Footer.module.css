@@ -1,0 +1,97 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1f1f1f;
+    height: 400px;
+    animation: chageColor 20s linear infinite;
+}
+
+@keyframes chageColor {
+    0% {
+        box-shadow: 1px 1px 20px goldenrod;
+        border-top: 2px solid goldenrod;
+    }
+    50% {
+        box-shadow: 1px 1px 20px rgb(218, 122, 32);
+        border-top: 2px solid rgb(218, 122, 32);
+    }
+
+    99% {
+        box-shadow: 1px 1px 20px rgb(218, 60, 32);
+        border-top: 2px solid rgb(218, 60, 32);
+    }
+    100%{
+        box-shadow: 1px 1px 20px goldenrod;
+        border-top: 2px solid goldenrod;
+    }
+}
+
+.social {
+    margin-top: 20px;
+}
+
+.social ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.social ul li a {
+    display: flex;
+    align-items: center;
+    color: #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+.social ul li a:hover {
+    color: #ffbb00;
+}
+
+
+.social ul li a i {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.social ul li .my_github i{
+    color: #453c96;
+}
+
+.social ul li .my_linkedin i{
+    color: #1144d1;
+}
+
+.footer h2 {
+    margin-top: 50px;
+    color: #ccc;
+}
+
+.footer h2 > span {
+    color: #ffbb00;
+    font-size: 1.6rem;
+}
+
+.footer .btnForm {
+    background: #ccc;
+    margin: 20px;
+    padding: 15px 50px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    color: #1f1f1f;
+    font-size: 1.5rem;
+    transition: .4s;
+}
+
+.footer .btnForm:hover {
+    background-color: transparent;
+    border-color: goldenrod;
+    color: goldenrod;
+    box-shadow: 1px 1px 20px goldenrod;
+}
+
+.parag {
+    color: #ccc;
+}

@@ -1,0 +1,215 @@
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 10px 10px 10px;
+}
+
+.aboutMe .aboutTitle span {
+    color: #ffbb00;
+    font-size: 1.6rem;
+}
+
+.aboutMe .text {
+    background: #1f1f1f;
+    color: #ccc;
+    padding: 10px;
+    box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.699);
+}
+
+
+.aboutMe .text .aboutTitle {
+    margin: 20px 10px;
+}
+
+.aboutMe .text p {
+    line-height: 1.4rem;
+    text-indent: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.aboutMe .myKnowledge {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 80px 20px 20px 20px;
+    background: #1f1f1f;
+    box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.699);
+}
+
+.aboutMe .myKnowledge h2 {
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.aboutMe .myKnowledge h2>span {
+    color: #ffbb00;
+    font-size: 1.7rem;
+}
+
+.aboutMe .myKnowledge ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutMe .myKnowledge ul li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    background: #ccc;
+    color: #1f1f1f;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    border: 2px solid transparent;
+    transition: .4s;
+}
+
+.aboutMe .myKnowledge ul li:hover {
+    background: #afafafc0;
+    color: #1f1f1f;
+
+}
+
+.aboutMe .myKnowledge ul li p {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    background: #1f1f1f;
+    top: 150px;
+    z-index: 1;
+    padding: 10px;
+    color: #ccc;
+    border: 2px solid goldenrod;
+    transition: .4s;
+}
+
+.aboutMe .myKnowledge ul li:hover p {
+    opacity: 1;
+}
+
+.aboutMe .myKnowledge ul li:hover i,
+.aboutMe .myKnowledge ul li:hover span {
+    opacity: .5;
+}
+
+.aboutMe .myKnowledge ul li i {
+    font-size: 5rem;
+}
+
+.aboutMe .myKnowledge ul .html:hover {
+    box-shadow: 1px 5px 20px #ff7b00;
+    border: 2px solid #ff7b00;
+}
+
+.aboutMe .myKnowledge ul .html i {
+    color: #ff7b00;
+}
+
+.aboutMe .myKnowledge ul .css:hover {
+    box-shadow: 1px 5px 20px #0044ff;
+    border: 2px solid #0044ff;
+}
+
+.aboutMe .myKnowledge ul .css i {
+    color: #0044ff;
+}
+
+.aboutMe .myKnowledge ul .javascript:hover {
+    box-shadow: 1px 5px 20px #ffbb00;
+    border: 2px solid #ffbb00;
+}
+
+.aboutMe .myKnowledge ul .javascript i {
+    color: #ffbb00;
+}
+
+.aboutMe .myKnowledge ul .react:hover {
+    box-shadow: 1px 5px 20px #00eeff;
+    border: 2px solid #00eeff;
+}
+
+.aboutMe .myKnowledge ul .react i {
+    color: #00eeff;
+}
+
+.aboutMe .myKnowledge ul .sass_scss:hover {
+    box-shadow: 1px 5px 20px #6f00ff;
+    border: 2px solid #6f00ff;
+}
+
+.aboutMe .myKnowledge ul .sass_scss i {
+    color: #6f00ff;
+}
+
+.aboutMe .myKnowledge ul .typescript:hover {
+    box-shadow: 1px 5px 20px #0099ff;
+    border: 2px solid #0099ff;
+}
+
+.aboutMe .myKnowledge ul .typescript i {
+    color: #0099ff;
+}
+
+.aboutMe .myKnowledge ul .python:hover {
+    box-shadow: 1px 5px 20px #ffd900;
+    border: 2px solid #ffd900;
+}
+
+.aboutMe .myKnowledge ul .python i {
+    color: #ffd900;
+}
+
+.aboutMe .myKnowledge ul .excel:hover {
+    box-shadow: 1px 5px 20px #108a00;
+    border: 2px solid #108a00;
+}
+
+.aboutMe .myKnowledge ul .excel i {
+    color: #108a00;
+}
+
+.destaque {
+    color: #ffbb00;
+}
+
+/* ---------- media ---------- */
+@media (min-width: 818px) {
+    .aboutMe {
+        margin: 0px 100px;
+    }
+
+    .aboutMe .myKnowledge ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .aboutMe .myKnowledge ul li {
+        margin: 10px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 700px;
+        height: 330px;
+        margin-left: 100px;
+    }
+
+    .aboutMe .myKnowledge {
+        width: 700px;
+        align-self: flex-end;
+        margin-right: 100px;
+    }
+}

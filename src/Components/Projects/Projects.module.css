@@ -1,0 +1,145 @@
+.containerProjects {
+    padding-top: 80px;
+}
+
+.containerProjects>div {
+    margin: 10px;
+    border-top: 2px solid goldenrod;
+    background: #1f1f1f;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.651);
+}
+
+.containerProjects h2 {
+    margin: 30px 10px 10px 10px;
+    color: #ccc;
+}
+
+.containerProjects h2>span {
+    color: #ffbb00;
+    font-size: 1.6rem;
+}
+
+.containerProjects h3 {
+    text-align: center;
+    color: #ccc;
+}
+
+.projectsList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectsList li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background: #ccc; */
+    margin: 20px;
+    padding: 10px;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    border: 1px solid #ccc;
+    transition: .4s;
+}
+
+.projectsList li:hover {
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px goldenrod;
+}
+
+.projectsList li h3 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.projectsList li p {
+    color: #fff;
+}
+
+.projectsList li a {
+    background: #1f1f1f;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.projectsList li h3,
+.projectsList li p,
+.projectsList li a {
+    opacity: 0;
+    transition: .4s;
+
+}
+
+.projectsList li:hover h3,
+.projectsList li:hover p,
+.projectsList li:hover a {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+.projeto1 {
+    background: url('../../Images/fotos-dos-projetos/pageStoreMarshall.png');
+    background-size: cover;
+}
+
+.projeto1:hover {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../../Images/fotos-dos-projetos/pageStoreMarshall.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.projeto2 {
+    background: url('../../Images/fotos-dos-projetos/listaDeCompras.png');
+    background-size: cover;
+}
+
+.projeto2:hover {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../../Images/fotos-dos-projetos/listaDeCompras.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.projeto3 {
+    background: url('../../Images/fotos-dos-projetos/guitarStore.png');
+    background-size: cover;
+}
+
+.projeto3:hover {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../../Images/fotos-dos-projetos/guitarStore.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.projeto4 {
+    background: url('../../Images/fotos-dos-projetos/replicaYoutube.png');
+    background-size: cover;
+}
+
+.projeto4:hover {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../../Images/fotos-dos-projetos/replicaYoutube.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* ---------- media ---------- */
+@media (min-width: 818px) {
+    .containerProjects>div {
+        margin: 0 0 20px 0;
+    }
+    .projectsList {
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .projectsList li {
+        width: 350px;
+    }
+}

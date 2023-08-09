@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.tnksMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #cccccc69;
+    height: 500px;
+    border: 2px solid goldenrod;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.image {
+    margin-top: 50px;
+}
+
+.container a {
+    background: #ccc;
+    margin-top: 50px;
+    padding: 20px 60px;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    color: #1f1f1f;
+    transition: .4s;
+}
+
+.container a:hover {
+    border-color: goldenrod;
+    color: goldenrod;
+    background: transparent;
+}
